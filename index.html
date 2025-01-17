@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>მთავარი გვერდი</title>
+    <link rel="stylesheet" href="./styles/style.css" />
+  </head>
+  <body>
+    <div class="conteiner">
+      <header>
+        <nav class="burger-menu">
+          <div class="menu-burger" onclick="burgerMenu()">☰</div>
+          <ul class="menu-links menu_link">
+            <li>
+              <a class="menu_a" href="./index.html">მთავარი</a>
+            </li>
+            <li>
+              <a class="menu_a" href="./about.html">კომპანიის შესახებ</a>
+            </li>
+            <li>
+              <a class="menu_a" href="./content.html">კონტენტი</a>
+            </li>
+            <li>
+              <a class="menu_a" href="./contact.html">საკონტაქტო</a>
+            </li>
+            <a class="menu_a" href="./signin.html">შესვლა</a>
+          </li>
+          <li>
+            <a class="menu_a" href="./singup.html">რეგისტრაცია</a>
+          </li>
+          </ul>
+        </nav>
+        <h2>მთავარი გვერდი</h2>
+        <a href="./index.html"
+          ><img class="travel" src="./image/Tbilisi.webp" alt="tbilisi"
+        /></a>
+      </header>
+      <h3 class="index-h3">კეთილი იყოს თქვენი მობრძანება!</h3>
+      <section class="slider">
+        <img class="image-slide" src="./image/2.jpg" alt="სურათი 1" />
+        <img class="image-slide" src="./image/3.jpg" alt="სურათი 3" />
+        <img class="image-slide" src="./image/4.jpg" alt="სურათი 3" />
+        <img class="image-slide" src="./image/5.jpg" alt="სურათი 3" />
+      </section>
+
+      <main>
+        <p class="index-p">
+          ჩვენი ვებსაიტი გაწვდით უნიკალურ კონტენტს... <br />
+          <a href="./content.html">გამოგვყევი</a>
+        </p>
+      </main>
+
+      <footer>
+        <section class="help">
+          <nav class="nav_help">
+            <ul class="footer_ul">
+              <li class="footer_li">
+                <a href="./contact.html" class="footer_a">Help</a>
+              </li>
+              <li class="footer_li">
+                <a href="./contact.html" class="footer_a">Help Centre</a>
+              </li>
+              <li class="footer_li">
+                <a href="./contact.html" class="footer_a">Privacy Settings</a>
+              </li>
+            </ul>
+          </nav>
+          <section class="social_section">
+            <a href="https://www.youtube.com/" class="youtube" target="_blank">
+              <img src="./image/logos_youtube.svg" alt="youtube" />
+            </a>
+            <a href="https://www.instagram.com/" class="inst" target="_blank">
+              <img src="./image/instagram.svg" alt="instagram" />
+            </a>
+            <a
+              href="https://www.facebook.com/"
+              class="facebook"
+              target="_blank"
+            >
+              <img src="./image/facebook.svg" alt="facebook" />
+            </a>
+          </section>
+        </section>
+        <img class="travel" src="./image/Tbilisi.webp" alt="" />
+        <nav class="contact_footer">
+          <p class="contact_p">საკონტაქტო ინფორმაცია</p>
+          <ul class="article_footer">
+            <li class="tel">
+              <a href="tel:  +123 45 67  89" class="telg">
+                <img src="./image/call.svg" alt="call" /> </a
+              ><span class="hidden"> +123 45 67 89 </span>
+            </li>
+            <li class="mail">
+              <a href="mailto:example@mail.com" target="_blank" class="mailg">
+                <img src="./image/email.svg" alt="email" /> </a
+              ><span class="hidden"> example@mail.com </span>
+            </li>
+            <li class="address">
+              <a
+                href="https://maps.app.goo.gl/FChFJyWhLP4HqNQx6"
+                target="_blank"
+                class="addressg"
+              >
+                <img src="./image/adrress.svg" alt="addrress" />
+              </a>
+              <span class="hidden"> Rustaveli avenue, 30 </span>
+            </li>
+          </ul>
+        </nav>
+      </footer>
+    </div>
+    <script src="./scripts/burger.js"></script>
+    <script src="./scripts/filter.js"></script>
+    <script src="./scripts/slider.js"></script>
+    <script src="./scripts/validation.js"></script>
+  </body>
+</html>
