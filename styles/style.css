@@ -177,6 +177,57 @@ footer {
   color: blue;
 }
 
+/* content */
+.whateter_section {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}
+
+.whater_h3 {
+  color: green;
+}
+
+.whater_input {
+  border: 1px solid #ccc;
+  width: 300px;
+  padding: 8px;
+  font-size: 13px;
+  color: #171645;
+}
+
+.whater_input:active {
+  box-shadow: 0 0 10px rgba(133, 14, 14, 0.5);
+}
+
+#getWeatherByCity {
+  background-color: #4caf50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+}
+
+#getWeatherByCity:hover {
+  box-shadow: 0 0 3px 3px rgba(133, 14, 14, 0.5);
+}
+
+#getWeatherByCity:active {
+  box-shadow: 0 0 5px 5px rgba(133, 14, 14, 0.5) inset;
+}
+
+#weatherByCity {
+  color: blue;
+}
+
+#windInfo {
+  color: red;
+}
+
 /* contact */
 .contact_form {
   background: linear-gradient(to left, red, green, blue);
@@ -213,7 +264,6 @@ footer {
 .contact_btn:active {
   box-shadow: 01px 0px 5px 5px black inset;
 }
-
 
 /* singup */
 
@@ -263,9 +313,9 @@ logo a {
   width: 100%;
   height: 45px;
   padding: 0 15px;
-  border: 1px solid #DADAF2;
+  border: 1px solid #dadaf2;
   border-radius: 5px;
-  background: #F8F8FB;
+  background: #f8f8fb;
   font-size: 16px;
   color: #171645;
   outline: none;
@@ -313,7 +363,7 @@ button {
   margin-bottom: 20px;
   border: none;
   border-radius: 5px;
-  background: #626CD6;
+  background: #626cd6;
   color: #fff;
   font-size: 18px;
   font-weight: 500;
@@ -338,4 +388,3 @@ button:hover {
 .sign_up a:hover {
   text-decoration: underline;
 }
-

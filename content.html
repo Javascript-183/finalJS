@@ -24,11 +24,12 @@
             <li>
               <a class="menu_a" href="./contact.html">საკონტაქტო</a>
             </li>
-            <a class="menu_a" href="./signin.html">შესვლა</a>
-          </li>
-          <li>
-            <a class="menu_a" href="./singup.html">რეგისტრაცია</a>
-          </li>
+            <li>
+              <a class="menu_a" href="./signin.html">შესვლა</a>
+            </li>
+            <li>
+              <a class="menu_a" href="./singup.html">რეგისტრაცია</a>
+            </li>
           </ul>
         </nav>
         <h2>კონტენტი</h2>
@@ -36,9 +37,22 @@
           ><img class="travel" src="./image/Tbilisi.webp" alt="tbilisi"
         /></a>
       </header>
+      <h1>ჩვენი კონტენტი</h1>
+      <section class="whateter_section">
+        <h3 class="whater_h3">სანამ მიმართულებას აირჩევ, შეამოწმე ამინდი:</h3>
+        <label for="city">ქალაქის სახელი:</label>
+        <input
+          class="whater_input"
+          type="text"
+          id="city"
+          placeholder="შეიყვანე ქალაქის სახელი ლათინური ასოებით"
+        />
+        <button id="getWeatherByCity">მოძებნე ამინდი</button>
 
-      <section>
-        <h1>ჩვენი კონტენტი</h1>
+        <p id="weatherByCity"></p>
+
+        <div id="windInfo"></div>
+
         <p>აქ მოცემულია ჩვენი ბლოგ პოსტები...</p>
       </section>
       <footer>
@@ -104,5 +118,6 @@
     <script src="./scripts/filter.js"></script>
     <script src="./scripts/slider.js"></script>
     <script src="./scripts/validation.js"></script>
+    <script src="./scripts/whaterScript.js"></script>
   </body>
 </html>
