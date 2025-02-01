@@ -228,8 +228,32 @@ footer {
   color: red;
 }
 
+.postebi {
+  width: 400px;
+  color: red;
+  font-size: 20px;
+}
+
+#cityFilter {
+  width: 300px;
+  padding: 8px;
+  font-size: 13px;
+  color: #171645;
+  border: 1px solid #cd1;
+  margin-block: 8px;
+}
+
+#searchInput {
+  width: 300px;
+  padding: 8px;
+  font-size: 13px;
+  color: #171645;
+  border: 1px solid #cd1;
+  margin-block: 8px;
+}
+
 hr {
-  border: 3px dotted #ccc;
+  border: 3px dotted #d034d0;
   width: 100%;
   margin-block: 20px;
 }
@@ -239,11 +263,13 @@ hr {
 .content_kutaisi,
 .content_telavi,
 .content_borjomi {
-  width: 60%;
+  width: 100%;
   display: flex;
   flex-direction: column;
   gap: 10px;
   align-items: center;
+  padding-top: 20px;
+  border-top: 3px dotted #ccc;
 }
 .readMoreBtn {
   background-color: #4caf50;

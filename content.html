@@ -38,6 +38,7 @@
         /></a>
       </header>
       <h1>ჩვენი კონტენტი</h1>
+
       <section class="whateter_section">
         <h3 class="whater_h3">სანამ მიმართულებას აირჩევ, შეამოწმე ამინდი:</h3>
         <label for="city">ქალაქის სახელი:</label>
@@ -53,9 +54,31 @@
 
         <div id="windInfo"></div>
 
-        <p>აქ მოცემულია ჩვენი ბლოგ პოსტები...</p>
+        <p class="postebi">
+          აქ მოცემულია პოსტები სხვადასხვა ტურისტული მიმართულებებზე. გადაავლე
+          თვალი და გააკეთე სასურველი არჩევანი..
+        </p>
+        <select id="cityFilter">
+          <option value="ყველა_ქალაქი">
+            აირჩიე შენთვის სასურველი მიმართულება
+          </option>
+          <option value="ყველა_ქალაქი">ყველა ქალაქი</option>
+          <option value="ქუთაისი">ქუთაისი</option>
+          <option value="მარტვილი">მარტვილი</option>
+          <option value="თელავი">თელავი</option>
+          <option value="ბორჯომი">ბორჯომი</option>
+          <option value="მცხეთა">მცხეთა</option>
+        </select>
+
+        <input
+          type="text"
+          id="searchInput"
+          placeholder="მოძებნე ქალაქი... (ქართულად)"
+        />
+        <p id="noResults" style="display: none">არ მოიძებნა</p>
+
         <hr />
-        <section class="content_martvili">
+        <section class="content_martvili searchContent ყველა_ქალაქი მარტვილი">
           <h2 class="city_names">მარტვილი</h2>
           <p id="shortText" class="shortText">
             მარტვილის მუნიციპალიტეტი გამოირჩევა ულამაზესი ბუნებითა და
@@ -93,8 +116,8 @@
             />
           </div>
         </section>
-        <hr />
-        <section class="content_mcxeta">
+
+        <section class="content_mcxeta searchContent ყველა_ქალაქი მცხეთა">
           <h2 class="city_names">მცხეთა</h2>
           <p id="shortTextMcxeta" class="shortText">
             მცხეთის მუნიციპალიტეტი კულტურული ძეგლების სიმრავლითა და ბუნების
@@ -131,8 +154,8 @@
             />
           </div>
         </section>
-        <hr />
-        <section class="content_kutaisi">
+
+        <section class="content_kutaisi searchContent ყველა_ქალაქი ქუთაისი">
           <h2 class="city_names">ქუთაისი</h2>
           <p id="shortTextKutaisi" class="shortText">
             ქუთაისი და მისი მიმდებარე ტერიტორიები კულტურული ძეგლების სიმრავლითა
@@ -169,8 +192,8 @@
             />
           </div>
         </section>
-        <hr />
-        <section class="content_telavi">
+
+        <section class="content_telavi searchContent ყველა_ქალაქი თელავი">
           <h2 class="city_names">თელავი</h2>
           <p id="shortTextTelavi" class="shortText">
             თელავი ძალიან ლამაზი რაიონია, რომელიც გამორჩეულია სხვადასხვა ეპოქის
@@ -206,8 +229,8 @@
             />
           </div>
         </section>
-        <hr />
-        <section class="content_borjomi">
+
+        <section class="content_borjomi searchContent ყველა_ქალაქი ბორჯომი">
           <h2 class="city_names">ბორჯომი</h2>
           <p id="shortTextBorjomi" class="shortText">
             ბორჯომის მუნიციპალიტეტი ერთ-ერთი შესანიშნავი ადგილია,
@@ -312,5 +335,7 @@
     <script src="./scripts/validation.js"></script>
     <script src="./scripts/whaterScript.js"></script>
     <script src="./scripts/content.js"></script>
+    <script src="./scripts/filter.js"></script>
+    <script src="./scripts/search.js"></script>
   </body>
 </html>
