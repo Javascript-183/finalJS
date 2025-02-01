@@ -65,11 +65,11 @@ function displayWindInfo(speed) {
   let image = "";
 
   if (speed < 10) {
-    image = "../image/image/low-wind.png";
+    image = "../image/low-wind.png";
   } else if (speed >= 10 && speed < 30) {
-    image = "../image/image/medium-wind.png";
+    image = "../image/medium-wind.png";
   } else {
-    image = "../image/image/high-wind.png";
+    image = "../image/high-wind.png";
   }
 
   windInfoDiv.innerHTML = `
