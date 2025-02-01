@@ -228,6 +228,63 @@ footer {
   color: red;
 }
 
+hr {
+  border: 3px dotted #ccc;
+  width: 100%;
+  margin-block: 20px;
+}
+
+.content_martvili,
+.content_mcxeta,
+.content_kutaisi,
+.content_telavi,
+.content_borjomi {
+  width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  align-items: center;
+}
+.readMoreBtn {
+  background-color: #4caf50;
+  color: white;
+  padding: 4px 0px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  border-radius: 15px;
+  width: 100px;
+}
+
+.fullText_block {
+  display: none;
+}
+
+.shortText,
+.fullText {
+  margin-bottom: 10px;
+  color: #332c98;
+  text-align: justify;
+}
+
+.city_names {
+  color: #332c98;
+}
+
+.martvili_img {
+  width: 200px;
+  height: 180px;
+}
+
+.martvili_img:hover {
+  box-shadow: 0 0 10px 10px rgba(133, 14, 14, 0.5);
+}
+
+.martvili_img:active {
+  width: 500px;
+  height: 450px;
+}
+
 /* contact */
 .contact_form {
   background: linear-gradient(to left, red, green, blue);
@@ -357,7 +414,7 @@ logo a {
   display: none;
 }
 
-button {
+.signup_btn {
   width: 100%;
   height: 50px;
   margin-bottom: 20px;
@@ -370,7 +427,7 @@ button {
   cursor: pointer;
 }
 
-button:hover {
+.signup_btn:hover {
   background: #4954d0;
 }
 
